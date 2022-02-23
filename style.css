@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+html{
+    font-family: 'Play', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.header-of-site{
+    background-color: hsla(0, 0%, 0%, .3);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.header-of-site a{
+    color: white;
+}
+.name-of-site{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+.nav-of-site{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 6vh;
+    transition: 250ms ease-in-out;
+}
+.nav-items:hover{
+    background-color: hsla(0, 0%, 98%, .6);
+    color: black;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./graphics/forest.jpg);
+    border-bottom: .01em black solid;
+}
+.blur{
+    width: 90vw;
+    height: 15vh;
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, .7);
+    border-radius: 4em;
+    filter: blur(.8em);
+}
+.home h1{
+    width: 85vw;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.national-parks{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.national-parks h2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    border-bottom: .01em black solid;
+    margin: 0;
+    padding: 2vh 0;
+}
+.national-parks img{
+    padding-left: .3vw;
+}
+.park-box{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
