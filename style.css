@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 html{
     font-family: 'Play', sans-serif;
     overflow-x: hidden;
@@ -16,7 +19,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-.header-of-site{
+nav{
     background-color: hsla(0, 0%, 0%, .3);
     color: white;
     font-size: 1.1em;
@@ -29,8 +32,22 @@ body{
     align-items: center;
     position: fixed;
     z-index: 1;
+    transition-duration: 250ms;
+    text-transform: uppercase;
 }
-.header-of-site a{
+.scrolled-nav{
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    top: 0;
+    z-index: 1;
+    color: black;
+    background-color: white;
+    border-bottom: black 0.15rem solid;
+    transition-timing-function: linear;
+    transition-duration: 250ms;
+}
+nav a{
     color: white;
 }
 .name-of-site{
@@ -68,7 +85,6 @@ main{
     align-items: center;
     justify-content: center;
     background-image: url(./graphics/forest.jpg);
-    border-bottom: .01em black solid;
 }
 .blur{
     width: 90vw;
@@ -105,4 +121,16 @@ main{
     width: 80vw;
     display: flex;
     justify-content: center;
+}
+.small-pine{
+    width: 1.5vw;
+    height: 3vh;
+}
+footer{
+    width: 100vw;
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border-top: black .1em solid;
 }
